@@ -14,6 +14,8 @@ public class Settings {
 	public final static double robotDriveSensitivity = 0.5;
 	public final static double robotDriveMaxOutput = 1.0;
 	
+	public final static double driveScalar = 0.5;
+	
 	public final static int joyDrivePort = 0;
 	public final static int joyArtPort = 1;
 	

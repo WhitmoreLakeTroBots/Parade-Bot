@@ -42,8 +42,8 @@ public class subChassis extends Subsystem {
     }
     
     public void drive(Joystick joy){
-    	double joyX = joy.getRawAxis(Settings.joyDriveXaxis);
-		double joyY = joy.getRawAxis(Settings.joyDriveYaxis);
+    	double joyX = joy.getRawAxis(Settings.joyDriveXaxis) * Settings.driveScalar;
+		double joyY = joy.getRawAxis(Settings.joyDriveYaxis) * Settings.driveScalar;
 		if(Robot.isDriveInverted){
 			robotDrive4.arcadeDrive(-joyY, -joyX, true);
 		} if(!Robot.isDriveInverted) {
